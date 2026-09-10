@@ -41,7 +41,7 @@ test("default page size stays inside the UI envelope", () => {
   assert.ok(Math.max(width, height) <= 640);
 });
 
-test("vendored runtime and photo directory exist", async () => {
+test("vendored runtime and animation artwork directory exist", async () => {
   assert.equal((await stat(new URL("vendor/page-flip.browser.js", root))).isFile(), true);
-  assert.equal((await stat(new URL("assets/photos/", root))).isDirectory(), true);
+  assert.equal((await stat(new URL("assets/animation/", root))).isDirectory(), true);
 });
