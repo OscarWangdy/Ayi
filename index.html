@@ -3,48 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#ebe1da">
-  <meta name="description" content="《暖风向东》——一册温暖手绘动画风格的旅行画册。">
-  <title>暖风向东 · A WARM JOURNEY</title>
+  <meta name="theme-color" content="#103a3a">
+  <meta name="description" content="《暖风向东》——由衣袖、背影、手势与旅途风景拼成的私人绘本。">
+  <title>暖风向东 · 她的十四个片段</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main class="room">
   <header class="book-header">
-    <span class="edition">TRAVEL NOTES · 2026</span>
+    <span class="edition">她的十四个片段</span>
     <h1>暖风向东</h1>
     <span id="orientation">双页展开</span>
   </header>
+
   <section class="stage" aria-label="《暖风向东》互动翻页画册">
     <div class="book-rig">
       <div id="book" class="book" data-page-width="480" data-page-height="640">
-        <article class="book-page visual-page cover recto" data-density="hard" aria-label="封面">
-          <img class="page-art" src="assets/animation/cover-right.jpg" alt="夕阳宫墙前身着浅色韩服的女孩，温暖手绘动画风格">
-          <div class="cover-title"><p>A WARM JOURNEY</p><h2>暖风<br>向东</h2><span>01 — 07</span></div>
+        <article class="book-page cover recto" data-density="hard" aria-label="封面">
+          <div class="cover-sun" aria-hidden="true"></div>
+          <figure class="cover-portrait"><img src="assets/collage/07-corridor-back.jpg" alt="木廊中身着韩服的长发背影"></figure>
+          <figure class="cover-slip"><img src="assets/collage/14-gift-light.jpg" alt="暖光柜台前的背影与礼袋"></figure>
+          <div class="cover-title"><small>A MEMORY COLLAGE</small><h2>暖风<br>向东</h2><p>她的十四个片段</p></div>
+          <span class="cover-mark">東</span>
         </article>
-        <article class="book-page quiet-page verso" aria-label="封面内页"><span class="sun" aria-hidden="true"></span><p class="vertical">风吹过衣袖<br>也吹亮了旅途</p></article>
-        <article class="book-page quiet-page recto" aria-label="书名页"><div class="title-page"><span>旅 行 绘 本</span><h2>暖风向东</h2><p>宫墙、街巷、海岸<br>和被光温柔接住的时刻</p></div></article>
-        <article class="book-page quiet-page verso" aria-label="序言"><div class="intro"><p>有些旅行，<br>后来记住的不是路线，<br>而是那天风的温度。</p><small>SOME JOURNEYS STAY<br>AS THE TEMPERATURE OF LIGHT.</small></div></article>
-        <article class="book-page visual-page verso" aria-label="第一章左页，朱墙暖日"><img class="page-art" src="assets/animation/spread-01-left.jpg" alt="夕阳照在朱红宫墙和浅色韩服女孩身上"><p class="caption light">01 · 暖日</p></article>
-        <article class="book-page visual-page recto" aria-label="第一章右页，宫墙长廊"><img class="page-art" src="assets/animation/spread-01-right.jpg" alt="雨后宫墙长廊延伸至樱花与山影"><span class="folio light">01</span></article>
-        <article class="book-page visual-page verso" aria-label="第二章左页，寺门人潮"><img class="page-art" src="assets/animation/spread-02-left.jpg" alt="樱花灯笼与寺院台阶上的人群"><p class="caption light">02 · 心愿</p></article>
-        <article class="book-page visual-page recto" aria-label="第二章右页，合掌祈愿"><img class="page-art" src="assets/animation/spread-02-right.jpg" alt="女孩在寺门前合掌祈愿的温暖动画画面"><span class="folio light">02</span></article>
-        <article class="book-page visual-page verso" aria-label="第三章左页，木廊背影"><img class="page-art" src="assets/animation/spread-03-left.jpg" alt="女孩沿着夕阳下的木廊缓缓向前"><p class="caption light">03 · 回廊</p></article>
-        <article class="book-page visual-page recto" aria-label="第三章右页，庭院余晖"><img class="page-art" src="assets/animation/spread-03-right.jpg" alt="宫殿庭院、远山与晚霞中的女孩背影"><span class="folio light">03</span></article>
-        <article class="book-page visual-page verso" aria-label="第四章左页，浴衣街角"><img class="page-art" src="assets/animation/spread-04-left.jpg" alt="身着淡粉浴衣的女孩站在亮灯的街角"><p class="caption light">04 · 街灯</p></article>
-        <article class="book-page visual-page recto" aria-label="第四章右页，雨后街道"><img class="page-art" src="assets/animation/spread-04-right.jpg" alt="雨后的日本街道通向晚霞与远处城市灯火"><span class="folio light">04</span></article>
-        <article class="book-page visual-page verso" aria-label="第五章左页，海边晨光"><img class="page-art" src="assets/animation/spread-05-left.jpg" alt="穿奶油色外套的女孩站在晨光海岸边"><p class="caption light">05 · 海风</p></article>
-        <article class="book-page visual-page recto" aria-label="第五章右页，城市晨光"><img class="page-art" src="assets/animation/spread-05-right.jpg" alt="海面晨光连接现代城市天际线"><span class="folio light">05</span></article>
-        <article class="book-page visual-page verso" aria-label="第六章左页，灯火与水晶帘"><img class="page-art" src="assets/animation/spread-06-left.jpg" alt="暖灯和水晶帘构成的安静动画室内"><p class="caption light">06 · 灯影</p></article>
-        <article class="book-page visual-page recto" aria-label="第六章右页，夜晚肖像"><img class="page-art" src="assets/animation/spread-06-right.jpg" alt="女孩坐在暮紫色沙发上的温暖动画肖像"><span class="folio light">06</span></article>
-        <article class="book-page visual-page verso" aria-label="第七章左页，礼物"><img class="page-art" src="assets/animation/spread-07-left.jpg" alt="女孩在暖光柜台前接过明亮礼袋"><p class="caption light">07 · 礼物</p></article>
-        <article class="book-page visual-page recto" aria-label="第七章右页，晚宴余光"><img class="page-art" src="assets/animation/spread-07-right.jpg" alt="女孩手捧花束回望灯火中的晚宴"><span class="folio light">07</span></article>
-        <article class="book-page quiet-page verso" aria-label="后记"><div class="ending"><span>完</span><h2>愿每一次出发，<br>都有暖风同行。</h2><p>十四段影像的动画绘本重述<br>FIRST ANIMATED EDITION · 2026</p></div></article>
-        <article class="book-page visual-page back-cover verso" data-density="hard" aria-label="封底"><img class="page-art" src="assets/animation/cover-left.jpg" alt="樱花、灯火和城市远景组成的动画封底"><p class="back-copy">A WARM JOURNEY<br><span>东行手记</span></p></article>
+
+        <article class="book-page endpaper verso" aria-label="封面内页"><div class="petal-field" aria-hidden="true"></div><p>不画她的脸。<br>画她留下的样子。</p></article>
+        <article class="book-page title-leaf recto" aria-label="书名页"><span>衣袖 · 背影 · 手势 · 风景</span><h2>暖风向东</h2><p>把十四张照片拆成碎片，<br>再拼回属于她的旅行。</p><b>01—14</b></article>
+        <article class="book-page preface verso" aria-label="序言"><p>认出一个人，<br>不只因为她的脸。</p><p>也因为她合掌时的手，<br>长发垂落的弧线，<br>衣服上反复出现的浅色，<br>和她站过的那些地方。</p><span>TURN THE PAGE →</span></article>
+
+        <article class="book-page collage-page palette-red verso" aria-label="第一章左页，朱墙与衣袖">
+          <figure class="scrap wide top"><img src="assets/collage/01-wall.jpg" alt="朱红宫墙与木柱的纸本画面"></figure>
+          <figure class="scrap portrait low-left"><img src="assets/collage/01-hanbok-hands.jpg" alt="浅色韩服、手表与手袋的局部"></figure>
+          <div class="paper-note upper-right"><small>01</small><strong>朱墙边</strong><p>她把手放在膝前，<br>浅色衣摆落成一圈。</p></div>
+          <span class="folio">01</span>
+        </article>
+        <article class="book-page collage-page palette-red recto" aria-label="第一章右页，宫墙下的韩服">
+          <figure class="scrap wide top-right"><img src="assets/collage/08-palace-grid.jpg" alt="宫墙窗格与深红木构"></figure>
+          <figure class="scrap portrait center-right"><img src="assets/collage/08-hanbok-standing.jpg" alt="站在宫墙前的韩服衣裙局部"></figure>
+          <figure class="scrap mini bottom-left"><img src="assets/collage/01-hanbok-hands.jpg" alt="韩服刺绣和手袋细节"></figure>
+          <p class="chapter-word left">衣袖记得<br>那天的光</p><span class="folio">02</span>
+        </article>
+
+        <article class="book-page collage-page palette-gold verso" aria-label="第二章左页，寺院祈愿">
+          <figure class="scrap wide top"><img src="assets/collage/02-temple-roof.jpg" alt="寺院门檐和香炉的拼贴片段"></figure>
+          <figure class="scrap square center-left"><img src="assets/collage/02-prayer-hands.jpg" alt="浴衣衣袖与合掌祈愿的双手"></figure>
+          <div class="paper-note bottom-right"><small>02</small><strong>合掌</strong><p>愿望没有说出口，<br>双手替她记住。</p></div><span class="folio">03</span>
+        </article>
+        <article class="book-page collage-page palette-gold recto" aria-label="第二章右页，人群与祈愿手势">
+          <figure class="scrap wide top-right"><img src="assets/collage/06-temple-crowd.jpg" alt="寺院屋檐和台阶人群"></figure>
+          <figure class="scrap square lower-right"><img src="assets/collage/06-folded-hands.jpg" alt="粉色浴衣与合掌的手"></figure>
+          <figure class="scrap strip left-strip"><img src="assets/collage/02-prayer-hands.jpg" alt="祈愿手势的重复片段"></figure>
+          <p class="chapter-word left">在人群里<br>安静一会儿</p><span class="folio">04</span>
+        </article>
+
+        <article class="book-page collage-page full-bleed verso" aria-label="第三章左页，木廊背影">
+          <figure class="bleed-image"><img src="assets/collage/07-corridor-back.jpg" alt="木质回廊中长发与韩服的背影"></figure>
+          <div class="dark-label"><small>03</small><strong>回廊</strong><span>她走在光的前面</span></div><span class="folio light">05</span>
+        </article>
+        <article class="book-page collage-page palette-blue recto" aria-label="第三章右页，庭院与背影细节">
+          <figure class="scrap portrait high-left"><img src="assets/collage/07-ribbon.jpg" alt="长发、花饰和韩服衣带的背影"></figure>
+          <figure class="scrap wide bottom"><img src="assets/collage/12-courtyard.jpg" alt="木构庭院与远处宫殿"></figure>
+          <figure class="scrap mini upper-right"><img src="assets/collage/12-hanbok-frame.jpg" alt="木门框中的浅色韩服与手袋"></figure>
+          <p class="chapter-word right">只看背影<br>也知道是她</p><span class="folio">06</span>
+        </article>
+
+        <article class="book-page collage-page palette-pink verso" aria-label="第四章左页，浴衣与街道">
+          <figure class="scrap wide top"><img src="assets/collage/11-street-line.jpg" alt="日本街道、电线与夏日天空"></figure>
+          <figure class="scrap portrait center-left"><img src="assets/collage/11-yukata-bag.jpg" alt="浅紫浴衣、腰带与手袋"></figure>
+          <div class="paper-note bottom-right"><small>04</small><strong>街角</strong><p>花色很轻，<br>城市的线条很直。</p></div><span class="folio">07</span>
+        </article>
+        <article class="book-page collage-page palette-pink recto" aria-label="第四章右页，另一件浴衣">
+          <figure class="scrap wide top-right"><img src="assets/collage/13-city-crossing.jpg" alt="街角建筑与斑驳天空"></figure>
+          <figure class="scrap portrait lower-right"><img src="assets/collage/13-yukata-folds.jpg" alt="粉色浴衣、腰带和交叠的双手"></figure>
+          <figure class="scrap strip left-strip"><img src="assets/collage/11-yukata-bag.jpg" alt="浴衣花纹和手袋的窄幅细节"></figure>
+          <p class="chapter-word left">两套花色<br>同一种从容</p><span class="folio">08</span>
+        </article>
+
+        <article class="book-page collage-page palette-sea verso" aria-label="第五章左页，海边衣角">
+          <figure class="scrap wide top"><img src="assets/collage/04-sea-sign.jpg" alt="海岸天空与路牌"></figure>
+          <figure class="scrap landscape center-left"><img src="assets/collage/04-cream-coat.jpg" alt="奶油色外套与黑色围巾的局部"></figure>
+          <div class="paper-note bottom-right"><small>05</small><strong>海风</strong><p>风把围巾吹向一边，<br>她仍站得很安静。</p></div><span class="folio">09</span>
+        </article>
+        <article class="book-page collage-page palette-sea recto" aria-label="第五章右页，城市天际线">
+          <figure class="scrap wide top-right"><img src="assets/collage/10-city-skyline.jpg" alt="蓝天下的城市建筑与观景台"></figure>
+          <figure class="scrap square lower-right"><img src="assets/collage/10-white-tee.jpg" alt="白色上衣、手臂和玻璃栏杆"></figure>
+          <p class="chapter-word left">海的尽头<br>接着一座城</p><span class="folio">10</span>
+        </article>
+
+        <article class="book-page collage-page palette-night verso" aria-label="第六章左页，水晶帘与蕾丝">
+          <figure class="scrap strip left-strip"><img src="assets/collage/03-crystal-curtain.jpg" alt="紫色灯光中的水晶帘"></figure>
+          <figure class="scrap square upper-right"><img src="assets/collage/03-lace-hands.jpg" alt="白色蕾丝上衣和交叠的双手"></figure>
+          <div class="paper-note bottom-right dark-note"><small>06</small><strong>灯影</strong><p>亮片晃动，<br>她把手轻轻叠好。</p></div><span class="folio light">11</span>
+        </article>
+        <article class="book-page collage-page palette-night recto" aria-label="第六章右页，奶油色衣料">
+          <figure class="scrap wide top-right"><img src="assets/collage/09-cream-lace.jpg" alt="奶油色蕾丝、系带与首饰"></figure>
+          <figure class="scrap portrait lower-left"><img src="assets/collage/09-hair-hand.jpg" alt="黑色发梢、抬起的手和衣料纹理"></figure>
+          <p class="chapter-word right light-text">认出她<br>也可以从细节开始</p><span class="folio light">12</span>
+        </article>
+
+        <article class="book-page collage-page palette-stage verso" aria-label="第七章左页，舞台记忆">
+          <figure class="scrap wide top"><img src="assets/collage/05-stage-glow.jpg" alt="被抽象成色块的舞台灯光"></figure>
+          <figure class="scrap square center-left"><img src="assets/collage/05-dress-memory.jpg" alt="舞台记忆中的浅色裙摆与光"></figure>
+          <div class="paper-note bottom-right"><small>07</small><strong>一段影像</strong><p>画面有些模糊，<br>记得的却很具体。</p></div><span class="folio">13</span>
+        </article>
+        <article class="book-page collage-page full-bleed recto" aria-label="第七章右页，暖光柜台背影">
+          <figure class="bleed-image"><img src="assets/collage/14-counter-back.jpg" alt="暖光柜台前穿银色裙装的长发背影"></figure>
+          <figure class="scrap mini gift-slip"><img src="assets/collage/14-gift-light.jpg" alt="礼袋、柜台与长发背影的细节"></figure>
+          <div class="dark-label right-label"><strong>最后，<br>把灯光带走。</strong></div><span class="folio light">14</span>
+        </article>
+
+        <article class="book-page ending verso" aria-label="后记"><span>完</span><h2>不必画出五官，<br>仍然处处都是她。</h2><p>十四张照片<br>二十八个记忆切片</p><small>WARM PAPER-COLLAGE EDITION · 2026</small></article>
+        <article class="book-page back-cover verso" data-density="hard" aria-label="封底"><div class="back-moon" aria-hidden="true"></div><figure><img src="assets/collage/07-ribbon.jpg" alt="长发、花饰与韩服衣带的背影细节"></figure><p>衣袖、背影、手势与风景<br><strong>都是她。</strong></p><span>A WARM JOURNEY · 01—14</span></article>
       </div>
     </div>
   </section>
-  <footer class="controls" aria-label="画册翻页控制"><button id="previous" type="button" aria-label="上一页">←</button><div class="status" aria-live="polite"><span id="page-status">封面</span><small>拖动书角，或使用方向键</small></div><button id="next" type="button" aria-label="下一页">→</button></footer>
+
+  <footer class="controls" aria-label="画册翻页控制">
+    <button id="previous" type="button" aria-label="上一页">←</button>
+    <div class="status" aria-live="polite"><span id="page-status">封面</span><small>拖动页面，或使用方向键</small></div>
+    <button id="next" type="button" aria-label="下一页">→</button>
+  </footer>
 </main>
 <script src="vendor/page-flip.browser.js"></script>
 <script src="flipbook.js"></script>
